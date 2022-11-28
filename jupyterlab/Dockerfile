@@ -15,5 +15,5 @@ RUN wget https://github.com/argoproj/argo-workflows/releases/download/v3.4.3/arg
     && chmod +x argo-linux-amd64 \
     && mv ./argo-linux-amd64 $HOME/bin/argo
 
-CMD ["jupyterlab"] 
+CMD ["jupyter", "lab"] 
 #COPY demo.ipynb $HOME/demo.ipynb
